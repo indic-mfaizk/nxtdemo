@@ -1,3 +1,4 @@
+"use client";
 import { Box, Container, Grid, Typography, Button } from "@mui/material";
 import React from "react";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -7,8 +8,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import Image from "next/image";
 import fLogo from "../assets/LandingPageAssets/fieresLogo.png";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <>
       {/* footer-start */}
@@ -95,7 +98,10 @@ const Footer = () => {
                 Quick Links
               </Typography>
             </Button>
-            <Button sx={{ width: "fit-content" }}>
+            <Button
+              sx={{ width: "fit-content" }}
+              onClick={() => router.push("/")}
+            >
               <Typography
                 sx={{ color: "white", fontWeight: "400", opacity: "80%" }}
               >
@@ -116,7 +122,10 @@ const Footer = () => {
                 FAQs
               </Typography>
             </Button>
-            <Button sx={{ width: "fit-content" }}>
+            <Button
+              sx={{ width: "fit-content" }}
+              onClick={() => router.push("privacy")}
+            >
               <Typography
                 sx={{ color: "white", fontWeight: "400", opacity: "80%" }}
               >

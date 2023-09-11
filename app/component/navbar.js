@@ -38,19 +38,14 @@ function NavBar() {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
+    console.log("Open");
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
   const navClickHandler = (p) => {
     if (p == "Terms and Services") {
       router.push("/privacy");
@@ -129,6 +124,7 @@ function NavBar() {
                 onClose={handleCloseNavMenu}
                 sx={{
                   display: { xs: "block", md: "none" },
+                  zIndex: "100",
                 }}
               >
                 {pages.map((page) => (

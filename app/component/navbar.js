@@ -33,12 +33,10 @@ function NavBar() {
           "Bridge",
         ]
       : ["Docs", "Faqs", "Terms and Services", "Eco System"];
-
+  // console.log(pages);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
-    console.log("Open");
     setAnchorElNav(event.currentTarget);
   };
 

@@ -9,7 +9,7 @@ const Page = () => {
           display: "flex",
           flexDirection: "column",
           gap: "20px",
-          my: "25px",
+          py: "25px",
         }}
       >
         <Typography

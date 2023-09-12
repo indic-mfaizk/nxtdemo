@@ -18,7 +18,7 @@ import {
   Fade,
   Backdrop,
 } from "@mui/material";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import bg from "./assets/LandingPageAssets/bg.svg";
 import heroImage from "./assets/LandingPageAssets/heroImage.png";
 import fLogo from "./assets/LandingPageAssets/fieresLogo.png";
@@ -106,6 +106,8 @@ const Home = () => {
   const [value1, setValue1] = React.useState(0);
   const [isBlur, setIsBlur] = useState(false);
 
+  const news1Ref = useRef(null);
+  const news2Ref = useRef(null);
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -2282,6 +2284,8 @@ const Home = () => {
                       border: "1px solid white",
                       borderColor: "#9038FF",
                     }}
+                    component={"div"}
+                    onClick={() => (news1Ref.current.scrollLeft += 100)}
                   >
                     <ArrowBackIosNewIcon
                       sx={{
@@ -2301,6 +2305,7 @@ const Home = () => {
                       border: "1px solid white",
                       opacity: "50%",
                     }}
+                    onClick={() => (news1Ref.current.scrollLeft -= 100)}
                   >
                     <ArrowForwardIosIcon
                       sx={{
@@ -2313,6 +2318,7 @@ const Home = () => {
               </Box>
               <CustomTabPanel value={value} index={0}>
                 <Box
+                  ref={news1Ref}
                   sx={{
                     bgcolor: "#0d010a",
                     height: "300px",
@@ -2320,6 +2326,7 @@ const Home = () => {
                     display: "flex",
                     gap: "10px",
                     overflowX: "auto",
+                    scrollBehavior: "smooth",
                   }}
                 >
                   {Array(10)
@@ -2491,6 +2498,8 @@ const Home = () => {
                       border: "1px solid white",
                       borderColor: "#9038FF",
                     }}
+                    component={"div"}
+                    onClick={() => (news2Ref.current.scrollLeft += 100)}
                   >
                     <ArrowBackIosNewIcon
                       sx={{
@@ -2510,6 +2519,8 @@ const Home = () => {
                       border: "1px solid white",
                       opacity: "50%",
                     }}
+                    component={"div"}
+                    onClick={() => (news2Ref.current.scrollLeft -= 100)}
                   >
                     <ArrowForwardIosIcon
                       sx={{
@@ -2522,6 +2533,7 @@ const Home = () => {
               </Box>
               <CustomTabPanel1 value={value1} index={0}>
                 <Box
+                  ref={news2Ref}
                   sx={{
                     bgcolor: "#0d010a",
                     height: "430px",
@@ -2529,6 +2541,7 @@ const Home = () => {
                     display: "flex",
                     gap: "10px",
                     overflowX: "auto",
+                    scrollBehavior: "smooth",
                   }}
                 >
                   {Array(10)

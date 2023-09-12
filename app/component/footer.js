@@ -243,12 +243,16 @@ const Footer = () => {
             © 2023 Fieres All Rights Reserved
           </Typography>
           <Box sx={{ display: "flex", gap: "10px" }}>
-            <Typography fontFamily={"sora"} fontSize={"12px"} color={"white"}>
-              Privacy Policy
-            </Typography>
-            <Typography fontFamily={"sora"} fontSize={"12px"} color={"white"}>
-              Token Disclaimer
-            </Typography>
+            <Button variant="text" onClick={() => router.push("/privacy")}>
+              <Typography fontFamily={"sora"} fontSize={"12px"} color={"white"}>
+                Privacy Policy
+              </Typography>
+            </Button>
+            <Button variant="text" onClick={() => router.push("/disclaimer")}>
+              <Typography fontFamily={"sora"} fontSize={"12px"} color={"white"}>
+                Token Disclaimer
+              </Typography>
+            </Button>
           </Box>
         </Container>
       </Grid>

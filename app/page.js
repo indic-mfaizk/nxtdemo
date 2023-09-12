@@ -2285,7 +2285,7 @@ const Home = () => {
                       borderColor: "#9038FF",
                     }}
                     component={"div"}
-                    onClick={() => (news1Ref.current.scrollLeft += 100)}
+                    onClick={() => (news1Ref.current.scrollLeft += 300)}
                   >
                     <ArrowBackIosNewIcon
                       sx={{
@@ -2305,7 +2305,7 @@ const Home = () => {
                       border: "1px solid white",
                       opacity: "50%",
                     }}
-                    onClick={() => (news1Ref.current.scrollLeft -= 100)}
+                    onClick={() => (news1Ref.current.scrollLeft -= 300)}
                   >
                     <ArrowForwardIosIcon
                       sx={{
@@ -2499,7 +2499,7 @@ const Home = () => {
                       borderColor: "#9038FF",
                     }}
                     component={"div"}
-                    onClick={() => (news2Ref.current.scrollLeft += 100)}
+                    onClick={() => (news2Ref.current.scrollLeft += 300)}
                   >
                     <ArrowBackIosNewIcon
                       sx={{
@@ -2520,7 +2520,7 @@ const Home = () => {
                       opacity: "50%",
                     }}
                     component={"div"}
-                    onClick={() => (news2Ref.current.scrollLeft -= 100)}
+                    onClick={() => (news2Ref.current.scrollLeft -= 300)}
                   >
                     <ArrowForwardIosIcon
                       sx={{

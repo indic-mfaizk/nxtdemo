@@ -217,13 +217,14 @@ const Home = () => {
               <Box
                 component={Image}
                 sx={{
-                  height: { xs: "350px", md: "750px" },
+                  height: { xs: "350px", md: "700px" },
+                  width: { xs: "350px", md: "700px" },
                 }}
                 src={heroImage}
                 position={{ xs: "relative", md: "static" }}
                 left={{ md: "0px" }}
                 objectFit="fill"
-                // fill
+                // fill={{ xs: false, md: false }}
               />
               {/* <Box
                 component={"div"}

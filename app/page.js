@@ -121,6 +121,7 @@ const Home = () => {
       <Box
         sx={{
           bgcolor: "#0d0109",
+          // bgcolor: "blue",
           width: "100vw",
           backgroundRepeat: "no-repeat",
         }}
@@ -216,13 +217,13 @@ const Home = () => {
               <Box
                 component={Image}
                 sx={{
-                  height: { xs: "300px", md: "750px" },
+                  height: { xs: "350px", md: "750px" },
                 }}
                 src={heroImage}
-                position={{ xs: "absolute", md: "static" }}
+                position={{ xs: "relative", md: "static" }}
                 left={{ md: "0px" }}
-                objectFit="contain"
-                fill
+                objectFit="fill"
+                // fill
               />
               {/* <Box
                 component={"div"}

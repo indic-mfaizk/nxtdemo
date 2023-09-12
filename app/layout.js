@@ -6,6 +6,7 @@ import "@fontsource-variable/sora";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/oxanium";
 import { CssBaseline } from "@mui/material";
+import "animate.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {

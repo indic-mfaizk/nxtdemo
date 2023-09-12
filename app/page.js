@@ -226,7 +226,7 @@ const Home = () => {
                 position={{ xs: "relative", md: "static" }}
                 left={{ md: "0px" }}
                 objectFit="fill"
-                // fill={{ xs: false, md: false }}
+                className="animate__animated animate__fadeInRight"
               />
               {/* <Box
                 component={"div"}

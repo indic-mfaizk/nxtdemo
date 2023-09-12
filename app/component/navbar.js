@@ -19,6 +19,8 @@ import eco from "../assets/NavBarAssets/eco.svg";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
+import { ThemeStore } from "../store/store";
+import { ThemeConst } from "../utils/const/const";
 function NavBar() {
   const router = useRouter();
   const pathname = usePathname();
@@ -35,7 +37,7 @@ function NavBar() {
       : ["Docs", "Faqs", "Terms and Services", "Eco System"];
   // console.log(pages);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-
+  const { theme, setTheme } = React.useContext(ThemeStore);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };

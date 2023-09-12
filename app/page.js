@@ -17,6 +17,7 @@ import {
   Tab,
   Fade,
   Backdrop,
+  colors,
 } from "@mui/material";
 import React, { useRef, useState } from "react";
 import bg from "./assets/LandingPageAssets/bg.svg";
@@ -122,10 +123,11 @@ const Home = () => {
     <>
       <Box
         sx={{
-          bgcolor: "#0d0109",
+          // bgcolor: "#0d0109",
           // bgcolor: "blue",
           width: "100vw",
-          backgroundRepeat: "no-repeat",
+          // backgroundRepeat: "no-repeat",
+          bgcolor: "primary.main",
         }}
       >
         <Container
@@ -154,7 +156,7 @@ const Home = () => {
                   variant="h3"
                   fontWeight={"500"}
                   fontFamily={"inter"}
-                  color={"white"}
+                  color={"text.main"}
                   fontSize={{ xs: "25px", md: "40px" }}
                 >
                   FIERES
@@ -163,7 +165,7 @@ const Home = () => {
                   variant="h5"
                   fontFamily={"inter"}
                   fontWeight={"600"}
-                  color={"white"}
+                  color={"text.main"}
                   sx={{
                     width: { xs: "auto", sm: "450px" },
                     textAlign: { xs: "center", sm: "center", md: "left" },
@@ -178,7 +180,7 @@ const Home = () => {
                   sx={{ width: { xs: "auto", sm: "450px" }, textAlign: "left" }}
                   fontFamily={"sora"}
                   fontWeight={"300"}
-                  color={"white"}
+                  color={"text.main"}
                 >
                   Experience the unparalleled power of Fieres chain - the
                   trailblazing crypto engineering organisation transforming the
@@ -194,13 +196,13 @@ const Home = () => {
                   sx={{
                     background:
                       "linear-gradient(90deg,#FF6F37, #FF2676, #B801AA, #7101BC)",
-                    color: "white",
+                    color: "text.main",
                     width: "170px",
                     borderRadius: "30px",
                     alignSelf: { xs: "center", md: "flex-start" },
                   }}
                 >
-                  White Paper
+                  Explore
                 </Button>
               </Box>
             </Grid>
@@ -246,9 +248,9 @@ const Home = () => {
             container
             spacing={2}
             columns={{ xs: 1, md: 12 }}
-            color={"#fff"}
+            color={"text.main"}
             sx={{
-              bgcolor: { xs: "none", md: "rgba(255, 255, 255, 0.03)" },
+              bgcolor: { xs: "none", md: "primary.transparent" },
               padding: "10px",
               borderRadius: "20px",
 
@@ -257,6 +259,7 @@ const Home = () => {
                 md: "0px",
               },
             }}
+            bgcolor={"blue"}
           >
             <Grid
               container
@@ -275,7 +278,7 @@ const Home = () => {
                 <Typography
                   fontFamily={"goodtimes"}
                   fontWeight={"600"}
-                  color={"#fff"}
+                  color={"text.main"}
                   width={{ xs: "auto", md: "400px" }}
                   textAlign={{ xs: "center", md: "inherit" }}
                   fontSize={"30px"}
@@ -327,11 +330,10 @@ const Home = () => {
                 <Button
                   variant="text"
                   sx={{
-                    background:
-                      "linear-gradient(90deg ,#FF6F37, #FF2676, #B801AA, #7101BC)",
+                    background: "button.main",
                     width: "120px",
                     textAlign: "center",
-                    color: "white",
+                    color: "text.main",
                     borderRadius: "15px",
                     // height: "0px",
                   }}
@@ -360,7 +362,7 @@ const Home = () => {
             >
               <Box
                 component={"div"}
-                bgcolor={"#190d15"}
+                bgcolor={"primary.sec"}
                 sx={{
                   height: "400px",
                   width: "400px",
@@ -535,7 +537,11 @@ const Home = () => {
                   }}
                 >
                   <Box
-                    sx={{ bgcolor: "white", height: "25px", width: "1px" }}
+                    sx={{
+                      bgcolor: "text.primary",
+                      height: "25px",
+                      width: "1px",
+                    }}
                   />
                   <Typography fontWeight={"300"} fontSize={"15px"}>
                     Pre-sale
@@ -554,7 +560,11 @@ const Home = () => {
                   }}
                 >
                   <Box
-                    sx={{ bgcolor: "white", height: "25px", width: "1px" }}
+                    sx={{
+                      bgcolor: "text.primary",
+                      height: "25px",
+                      width: "1px",
+                    }}
                   />
                   <Typography fontWeight={"300"} fontSize={"15px"}>
                     Soft Cap
@@ -573,7 +583,11 @@ const Home = () => {
                   }}
                 >
                   <Box
-                    sx={{ bgcolor: "white", height: "25px", width: "1px" }}
+                    sx={{
+                      bgcolor: "text.primary",
+                      height: "25px",
+                      width: "1px",
+                    }}
                   />
                   <Typography fontWeight={"300"} fontSize={"15px"}>
                     Bonus
@@ -592,7 +606,7 @@ const Home = () => {
                     borderRadius: "20px",
                   }}
                 >
-                  <Typography variant="button" color={"white"}>
+                  <Typography variant="button" color={"text.primary"}>
                     Purchase Token
                   </Typography>
                 </Button>
@@ -603,7 +617,7 @@ const Home = () => {
           <Container
             maxWidth={"xl"}
             sx={{
-              bgcolor: "#0d0109",
+              // bgcolor: "#0d0109",
               height: { xs: "auto", md: "400px" },
               display: "flex",
               justifyContent: "center",
@@ -638,7 +652,7 @@ const Home = () => {
                 variant="text"
                 sx={{
                   gap: "10px",
-                  bgcolor: "#1a0b11",
+                  bgcolor: "button.sec",
                   borderRadius: "50px",
                   px: { md: "50px", xs: "0px" },
                   height: { xs: "50px", md: "80px" },
@@ -649,7 +663,7 @@ const Home = () => {
                   fontFamily={"sora"}
                   fontWeight={"600"}
                   sx={{
-                    color: "white",
+                    color: "text.primary",
                     fontSize: { xs: "10px", md: "15px" },
                   }}
                 >
@@ -684,7 +698,7 @@ const Home = () => {
                 variant="text"
                 sx={{
                   gap: "10px",
-                  bgcolor: "#1a0b11",
+                  bgcolor: "button.sec",
                   borderRadius: "50px",
                   px: { md: "50px", xs: "0px" },
                   height: { xs: "50px", md: "80px" },
@@ -695,7 +709,7 @@ const Home = () => {
                   fontFamily={"sora"}
                   fontWeight={"600"}
                   sx={{
-                    color: "white",
+                    color: "text.primary",
                     fontSize: { xs: "10px", md: "15px" },
                   }}
                 >
@@ -730,7 +744,7 @@ const Home = () => {
                 variant="text"
                 sx={{
                   gap: "10px",
-                  bgcolor: "#1a0b11",
+                  bgcolor: "button.sec",
                   borderRadius: "50px",
                   px: { md: "50px", xs: "0px" },
                   height: { xs: "50px", md: "80px" },
@@ -741,7 +755,7 @@ const Home = () => {
                   fontFamily={"sora"}
                   fontWeight={"600"}
                   sx={{
-                    color: "white",
+                    color: "text.primary",
                     fontSize: { xs: "10px", md: "15px" },
                   }}
                 >
@@ -757,8 +771,9 @@ const Home = () => {
           <Container
             maxWidth="xl"
             sx={{
-              color: "white",
-              background: { xs: "#1a0a15", lg: `url(${sec4bg})` },
+              bgcolor: { xs: "background.primary" },
+              color: "text.primary",
+              background: { lg: `url(${sec4bg})` },
               py: "50px",
               mt: "70px",
               display: "flex",
@@ -766,6 +781,7 @@ const Home = () => {
               justifyContent: "center",
               alignItems: "center",
               gap: "80px",
+              mb: { md: "80px", xs: "0px" },
             }}
           >
             <Box
@@ -781,14 +797,22 @@ const Home = () => {
               }}
               component={"div"}
             >
-              <Typography fontFamily={"sora"} fontWeight={"300"}>
+              <Typography
+                fontFamily={"sora"}
+                fontWeight={"300"}
+                color={"text.primary"}
+              >
                 Welcome to the exciting new era of blockchain, where people come
                 together to create a more sustainable, inclusive, and equitable
                 world. At Fieres, we're proud to be leading the way with our
                 innovative Fieres Chain, which bridges the physical and digital
                 worlds, connecting real-world data to digital assets.
               </Typography>
-              <Typography fontFamily={"sora"} fontWeight={"300"}>
+              <Typography
+                fontFamily={"sora"}
+                fontWeight={"300"}
+                color={"text.primary"}
+              >
                 Our vision is to create a world where transparency and trust are
                 between individuals and organisations. With Fieres Chain, we're
                 making this vision a reality by quantifying and validating
@@ -818,7 +842,7 @@ const Home = () => {
                 <Typography
                   fontFamily={"sora"}
                   fontSize={"15px"}
-                  sx={{ mx: "10px", color: "white" }}
+                  sx={{ mx: "10px", color: "text.primary" }}
                 >
                   Explore Dapps
                 </Typography>
@@ -828,17 +852,20 @@ const Home = () => {
             <Box
               component={"div"}
               sx={{
-                bgcolor: "blue",
+                bgcolor: "background.sec",
                 p: { lg: "30px", xs: "10px" },
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                background: "#180b17",
+                // background: "",
                 borderRadius: "20px",
                 width: { xs: "100%", lg: "auto" },
               }}
             >
-              <TableContainer component={Paper} sx={{ background: "#190b19" }}>
+              <TableContainer
+                component={"div"}
+                sx={{ bgcolor: "background.ter" }}
+              >
                 <Table
                   sx={{
                     minWidth: 650,
@@ -856,7 +883,7 @@ const Home = () => {
                   <TableHead>
                     <TableRow>
                       <TableCell></TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box
                           sx={{
                             display: "flex",
@@ -867,10 +894,10 @@ const Home = () => {
                           }}
                         >
                           <Box component={Image} src={btcCard} />
-                          <Typography color="white">Bitcoin</Typography>
+                          <Typography color="text.primary">Bitcoin</Typography>
                         </Box>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box
                           sx={{
                             display: "flex",
@@ -881,10 +908,10 @@ const Home = () => {
                           }}
                         >
                           <Box component={Image} src={ethCard} />
-                          <Typography color="white">Eth</Typography>
+                          <Typography color="text.primary">Eth</Typography>
                         </Box>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box
                           sx={{
                             display: "flex",
@@ -895,10 +922,10 @@ const Home = () => {
                           }}
                         >
                           <Box component={Image} src={rippleCard} />
-                          <Typography color="white">Ripple</Typography>
+                          <Typography color="text.primary">Ripple</Typography>
                         </Box>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box
                           sx={{
                             display: "flex",
@@ -909,7 +936,7 @@ const Home = () => {
                           }}
                         >
                           <Box component={Image} src={fieroCard} />
-                          <Typography color="white">Fiero</Typography>
+                          <Typography color="text.primary">Fiero</Typography>
                         </Box>
                       </TableCell>
                     </TableRow>
@@ -919,22 +946,22 @@ const Home = () => {
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell
-                        sx={{ color: "white" }}
+                        sx={{ color: "text.primary" }}
                         component="th"
                         scope="row"
                       >
                         Decentralised
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkGreen} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkGreen} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkRed} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkGreen} />
                       </TableCell>
                     </TableRow>
@@ -942,22 +969,22 @@ const Home = () => {
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell
-                        sx={{ color: "white" }}
+                        sx={{ color: "text.primary" }}
                         component="th"
                         scope="row"
                       >
                         Scalability
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkRed} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkRed} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkRed} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkGreen} />
                       </TableCell>
                     </TableRow>
@@ -965,22 +992,22 @@ const Home = () => {
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell
-                        sx={{ color: "white" }}
+                        sx={{ color: "text.primary" }}
                         component="th"
                         scope="row"
                       >
                         Secure
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkGreen} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkGreen} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkGreen} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkGreen} />
                       </TableCell>
                     </TableRow>
@@ -988,17 +1015,17 @@ const Home = () => {
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell
-                        sx={{ color: "white" }}
+                        sx={{ color: "text.primary" }}
                         component="th"
                         scope="row"
                       >
                         Speed
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="left">
+                      <TableCell sx={{ color: "text.primary" }} align="left">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"600"}
-                          color="white"
+                          color="text.primary"
                         >
                           4.6tps
                         </Typography>
@@ -1023,11 +1050,11 @@ const Home = () => {
                           ></Box>
                         </Box>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="left">
+                      <TableCell sx={{ color: "text.primary" }} align="left">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"600"}
-                          color="white"
+                          color="text.primary"
                         >
                           20tps
                         </Typography>
@@ -1052,11 +1079,11 @@ const Home = () => {
                           ></Box>
                         </Box>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="left">
+                      <TableCell sx={{ color: "text.primary" }} align="left">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"600"}
-                          color="white"
+                          color="text.primary"
                         >
                           1000tps
                         </Typography>
@@ -1081,11 +1108,11 @@ const Home = () => {
                           ></Box>
                         </Box>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="left">
+                      <TableCell sx={{ color: "text.primary" }} align="left">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"600"}
-                          color="white"
+                          color="text.primary"
                         >
                           2000tps
                         </Typography>
@@ -1115,13 +1142,13 @@ const Home = () => {
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell
-                        sx={{ color: "white" }}
+                        sx={{ color: "text.primary" }}
                         component="th"
                         scope="row"
                       >
                         Transaction fees
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"300"}
@@ -1131,7 +1158,7 @@ const Home = () => {
                           High
                         </Typography>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"300"}
@@ -1141,7 +1168,7 @@ const Home = () => {
                           High
                         </Typography>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"300"}
@@ -1151,7 +1178,7 @@ const Home = () => {
                           Low
                         </Typography>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"300"}
@@ -1166,13 +1193,13 @@ const Home = () => {
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell
-                        sx={{ color: "white" }}
+                        sx={{ color: "text.primary" }}
                         component="th"
                         scope="row"
                       >
                         Consensus
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"300"}
@@ -1181,7 +1208,7 @@ const Home = () => {
                           POW
                         </Typography>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"300"}
@@ -1190,7 +1217,7 @@ const Home = () => {
                           POW{"->"}POS
                         </Typography>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"300"}
@@ -1199,7 +1226,7 @@ const Home = () => {
                           RPCA
                         </Typography>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"300"}
@@ -1213,13 +1240,13 @@ const Home = () => {
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell
-                        sx={{ color: "white" }}
+                        sx={{ color: "text.primary" }}
                         component="th"
                         scope="row"
                       >
                         Storage
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"300"}
@@ -1228,7 +1255,7 @@ const Home = () => {
                           DLT
                         </Typography>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"300"}
@@ -1237,7 +1264,7 @@ const Home = () => {
                           DLT
                         </Typography>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"300"}
@@ -1246,7 +1273,7 @@ const Home = () => {
                           DLT
                         </Typography>
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Typography
                           fontFamily={"sora"}
                           fontWeight={"300"}
@@ -1260,22 +1287,22 @@ const Home = () => {
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell
-                        sx={{ color: "white" }}
+                        sx={{ color: "text.primary" }}
                         component="th"
                         scope="row"
                       >
                         Application layer
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkGreen} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkRed} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkRed} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkGreen} />
                       </TableCell>
                     </TableRow>
@@ -1283,22 +1310,22 @@ const Home = () => {
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell
-                        sx={{ color: "white" }}
+                        sx={{ color: "text.primary" }}
                         component="th"
                         scope="row"
                       >
                         Environment friendly
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkRed} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkGreen} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkGreen} />
                       </TableCell>
-                      <TableCell sx={{ color: "white" }} align="center">
+                      <TableCell sx={{ color: "text.primary" }} align="center">
                         <Box component={Image} src={checkRed} />
                       </TableCell>
                     </TableRow>
@@ -1316,14 +1343,14 @@ const Home = () => {
           sx={{
             background: "#1f1f1f",
             // minWidth: "100dvw",
-            bgcolor: "#13060e",
+            bgcolor: "primary.main",
             py: "20px",
           }}
         >
           <Container
             maxWidth="xl"
             sx={{
-              bgcolor: "#13060e",
+              bgcolor: "background.fourth",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -1333,14 +1360,14 @@ const Home = () => {
           >
             <Typography
               fontFamily={"goodtimes"}
-              color="white"
+              color="text.primary"
               fontSize={{ md: "34px", xs: "14px" }}
             >
               High Quality NFT Collection
             </Typography>
             <Typography
               fontFamily={"sora"}
-              color="white"
+              color="text.primary"
               fontSize={"14px"}
               sx={{
                 opacity: "60%",
@@ -1359,7 +1386,7 @@ const Home = () => {
             >
               <Typography
                 variant="button"
-                color="white"
+                color="text.primary"
                 sx={{ px: "10px", py: "4px" }}
               >
                 Exploren NFT
@@ -1382,12 +1409,13 @@ const Home = () => {
 
             py: "20px",
             mt: "50px",
+            bgcolor: "primary.main",
           }}
         >
           <Container
             maxWidth="xl"
             sx={{
-              bgcolor: "#0d0109",
+              bgcolor: "primary.main",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -1419,7 +1447,7 @@ const Home = () => {
             >
               <Typography
                 fontFamily={"goodtimes"}
-                color="white"
+                color="text.primary"
                 fontSize={{ lg: "34px", xs: "16px" }}
                 // width={"500px"}
               >
@@ -1427,7 +1455,7 @@ const Home = () => {
                 <Typography
                   component={"span"}
                   fontFamily={"goodtimes"}
-                  // color="white"
+                  // color="text.primary"
                   fontSize={{ lg: "34px", xs: "16px" }}
                   sx={{
                     background:
@@ -1442,7 +1470,7 @@ const Home = () => {
                 <Typography
                   component={"span"}
                   fontFamily={"goodtimes"}
-                  // color="white"
+                  // color="text.primary"
                   fontSize={{ lg: "34px", xs: "16px" }}
                   sx={{
                     background:
@@ -1459,7 +1487,7 @@ const Home = () => {
               {/* card-start */}
               <Box
                 sx={{
-                  bgcolor: "#170814",
+                  bgcolor: "background.fifth",
                   width: { md: "500px", xs: "auto" },
                   p: "10px",
                   borderRadius: "10px",
@@ -1468,10 +1496,10 @@ const Home = () => {
               >
                 <Box
                   sx={{
-                    bgcolor: "#140710",
+                    bgcolor: "background.fifth",
                     p: "10px",
                     borderRadius: "10px",
-                    border: "1px",
+                    border: "px",
                     borderStyle: "solid",
                     borderColor: "rgba(255, 255, 255, 0.07)",
                     display: "flex",
@@ -1485,7 +1513,7 @@ const Home = () => {
                   {/* item-start */}
                   <Box
                     sx={{
-                      bgcolor: "#140710",
+                      bgcolor: "background.fifth",
                       width: "100px",
                       display: "flex",
                       flexDirection: "column",
@@ -1506,9 +1534,9 @@ const Home = () => {
                       }}
                     >
                       <Box component={Image} src={btcCard} />
-                      <Typography color="white">Bitcoin</Typography>
+                      <Typography color="text.primary">Bitcoin</Typography>
                     </Box>
-                    <Typography color="white" sx={{ opacity: "70%" }}>
+                    <Typography color="text.primary" sx={{ opacity: "70%" }}>
                       2000 tps
                     </Typography>
                     <Box
@@ -1527,7 +1555,7 @@ const Home = () => {
                   {/* item-start */}
                   <Box
                     sx={{
-                      bgcolor: "#140710",
+                      bgcolor: "background.fifth",
                       width: "100px",
                       display: "flex",
                       flexDirection: "column",
@@ -1548,9 +1576,9 @@ const Home = () => {
                       }}
                     >
                       <Box component={Image} src={ethCard} />
-                      <Typography color="white">Bitcoin</Typography>
+                      <Typography color="text.primary">Bitcoin</Typography>
                     </Box>
-                    <Typography color="white" sx={{ opacity: "70%" }}>
+                    <Typography color="text.primary" sx={{ opacity: "70%" }}>
                       1000 tps
                     </Typography>
                     <Box
@@ -1569,7 +1597,7 @@ const Home = () => {
                   {/* item-start */}
                   <Box
                     sx={{
-                      bgcolor: "#140710",
+                      bgcolor: "background.fifth",
                       width: "100px",
                       display: "flex",
                       flexDirection: "column",
@@ -1590,9 +1618,9 @@ const Home = () => {
                       }}
                     >
                       <Box component={Image} src={rippleCard} />
-                      <Typography color="white">Ripple</Typography>
+                      <Typography color="text.primary">Ripple</Typography>
                     </Box>
-                    <Typography color="white" sx={{ opacity: "70%" }}>
+                    <Typography color="text.primary" sx={{ opacity: "70%" }}>
                       1000 tps
                     </Typography>
                     <Box
@@ -1611,7 +1639,7 @@ const Home = () => {
                   {/* item-start */}
                   <Box
                     sx={{
-                      bgcolor: "#140710",
+                      bgcolor: "background.fifth",
                       width: "100px",
                       display: "flex",
                       flexDirection: "column",
@@ -1632,9 +1660,9 @@ const Home = () => {
                       }}
                     >
                       <Box component={Image} src={fieroCard} />
-                      <Typography color="white">Fiero</Typography>
+                      <Typography color="text.primary">Fiero</Typography>
                     </Box>
-                    <Typography color="white" sx={{ opacity: "70%" }}>
+                    <Typography color="text.primary" sx={{ opacity: "70%" }}>
                       10 tps
                     </Typography>
                     <Box
@@ -1655,7 +1683,7 @@ const Home = () => {
               {/* card-start */}
               <Typography
                 sx={{
-                  color: "rgba(255, 255, 255, 0.60)",
+                  color: "text.semitransparent",
                   fontWeight: "300",
                   width: "89%",
                   mt: "20px",
@@ -1669,7 +1697,7 @@ const Home = () => {
               </Typography>
               <Typography
                 sx={{
-                  color: "rgba(255, 255, 255, 0.60)",
+                  color: "text.semitransparent",
                   fontWeight: "300",
                   width: "89%",
                   mt: "20px",
@@ -1693,7 +1721,7 @@ const Home = () => {
               >
                 <Typography
                   variant="button"
-                  color="white"
+                  color="text.primary"
                   fontFamily={"sora"}
                   fontWeight={"600"}
                 >
@@ -1708,7 +1736,7 @@ const Home = () => {
         <Grid
           container
           sx={{
-            background: "#0d0109",
+            background: "primary.main",
             // minWidth: "100dvw",
 
             py: "20px",
@@ -1718,7 +1746,7 @@ const Home = () => {
           <Container
             maxWidth="xl"
             sx={{
-              bgcolor: "#0d0109",
+              bgcolor: "primary.main",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -1730,7 +1758,7 @@ const Home = () => {
             <Box sx={{ width: "100%", display: "flex", flexDirection: "row" }}>
               <Box sx={{ width: { lg: "50%", xs: "70%" } }}>
                 <Typography
-                  color="white"
+                  color="text.primary"
                   fontFamily="oxanium"
                   fontSize={{ md: "32px", sx: "18px" }}
                   fontWeight={"700"}
@@ -1738,7 +1766,7 @@ const Home = () => {
                   See the roadmap to fieres
                 </Typography>
                 <Typography
-                  color="white"
+                  color="text.primary"
                   fontFamily={"sora"}
                   fontSize={{ md: "14px", xs: "10px" }}
                 >
@@ -1764,13 +1792,13 @@ const Home = () => {
                     justifyContent: "center",
                     alignItems: "center",
                     borderRadius: "100%",
-                    border: "1px solid white",
+                    border: "1px solid",
                     borderColor: "#9038FF",
                   }}
                 >
                   <ArrowBackIosNewIcon
                     sx={{
-                      color: "white",
+                      color: "text.primary",
                       fontSize: { xs: "14px", md: "auto" },
                     }}
                   />
@@ -1783,13 +1811,14 @@ const Home = () => {
                     justifyContent: "center",
                     alignItems: "center",
                     borderRadius: "100%",
-                    border: "1px solid white",
+                    border: "1px solid ",
+                    borderColor: "text.primary",
                     opacity: "50%",
                   }}
                 >
                   <ArrowForwardIosIcon
                     sx={{
-                      color: "white",
+                      color: "text.primary",
                       fontSize: { xs: "14px", md: "auto" },
                     }}
                   />
@@ -1816,7 +1845,8 @@ const Home = () => {
               <Box
                 component={"div"}
                 sx={{
-                  background: { xs: "#210b18", lg: `url(${cRec})` },
+                  bgcolor: { xs: "background.sixth" },
+                  background: { lg: `url(${cRec})` },
                   width: "403px",
                   height: { lg: "323px", xs: "auto" },
                   backgroundRepeat: "no-repeat",
@@ -1835,14 +1865,14 @@ const Home = () => {
                   fontFamily={"goodtimes"}
                   fontWeight={"700"}
                   fontSize={{ lg: "24px", xs: "12px" }}
-                  color="white"
+                  color="text.primary"
                 >
                   QUATER 1
                 </Typography>
                 <Typography
                   fontFamily={"sora"}
                   fontSize={"14px"}
-                  sx={{ color: "rgba(255, 255, 255, 0.60)" }}
+                  sx={{ color: "text.semitransparent" }}
                 >
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. dummy text ever since the 1500s, when an
@@ -1851,7 +1881,8 @@ const Home = () => {
               </Box>
               <Box
                 sx={{
-                  background: { xs: "#210b18", lg: `url(${cRec})` },
+                  bgcolor: { xs: "background.sixth" },
+                  background: { lg: `url(${cRec})` },
                   width: "403px",
                   height: { lg: "323px", xs: "auto" },
                   backgroundRepeat: "no-repeat",
@@ -1870,14 +1901,14 @@ const Home = () => {
                   fontFamily={"goodtimes"}
                   fontWeight={"700"}
                   fontSize={{ lg: "24px", xs: "12px" }}
-                  color="white"
+                  color="text.primary"
                 >
                   QUATER 1
                 </Typography>
                 <Typography
                   fontFamily={"sora"}
                   fontSize={"14px"}
-                  sx={{ color: "rgba(255, 255, 255, 0.60)" }}
+                  sx={{ color: "text.semitransparent" }}
                 >
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. dummy text ever since the 1500s, when an
@@ -1886,7 +1917,8 @@ const Home = () => {
               </Box>
               <Box
                 sx={{
-                  background: { xs: "#210b18", lg: `url(${cRec})` },
+                  bgcolor: { xs: "background.sixth" },
+                  background: { lg: `url(${cRec})` },
                   width: "403px",
                   height: { lg: "323px", xs: "auto" },
                   backgroundRepeat: "no-repeat",
@@ -1905,14 +1937,14 @@ const Home = () => {
                   fontFamily={"goodtimes"}
                   fontWeight={"700"}
                   fontSize={{ lg: "24px", xs: "12px" }}
-                  color="white"
+                  color="text.primary"
                 >
                   QUATER 1
                 </Typography>
                 <Typography
                   fontFamily={"sora"}
                   fontSize={"14px"}
-                  sx={{ color: "rgba(255, 255, 255, 0.60)" }}
+                  sx={{ color: "text.semitransparent" }}
                 >
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. dummy text ever since the 1500s, when an
@@ -1927,7 +1959,7 @@ const Home = () => {
               sx={{ display: { xs: "none", lg: "flex" }, width: "100%" }}
             />
             <Typography
-              color="white"
+              color="text.primary"
               fontFamily={"romantimes"}
               sx={{
                 position: "relative",
@@ -1945,7 +1977,7 @@ const Home = () => {
         <Grid
           container
           sx={{
-            background: "#0d0109",
+            background: "primary.main",
             // minWidth: "100dvw",
 
             py: "20px",
@@ -1955,7 +1987,7 @@ const Home = () => {
           <Container
             maxWidth="xl"
             sx={{
-              bgcolor: "#0d0109",
+              bgcolor: "primary.main",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -1966,7 +1998,7 @@ const Home = () => {
             {/* item-start */}
             <Box
               sx={{
-                bgcolor: "#170b14",
+                bgcolor: "background.seventh",
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
@@ -1978,7 +2010,7 @@ const Home = () => {
               }}
             >
               <Typography
-                color="white"
+                color="text.primary"
                 fontSize={{ md: "18px", xs: "14px" }}
                 fontFamily={"sora"}
                 fontWeight={"500"}
@@ -1995,7 +2027,7 @@ const Home = () => {
                 }}
               >
                 <Typography
-                  color="white"
+                  color="text.primary"
                   sx={{ fontSize: { xs: "14px", md: "auto" } }}
                 >
                   COMING SOON
@@ -2006,7 +2038,7 @@ const Home = () => {
             {/* item-start */}
             <Box
               sx={{
-                bgcolor: "#170b14",
+                bgcolor: "background.seventh",
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
@@ -2018,26 +2050,26 @@ const Home = () => {
               }}
             >
               <Typography
-                color="white"
+                color="text.primary"
                 fontSize={{ md: "18px", xs: "14px" }}
                 fontFamily={"sora"}
                 fontWeight={"500"}
               >
-                White Paper launch{" "}
+                text.primary Paper launch{" "}
               </Typography>
 
               <Box sx={{ display: "flex", gap: "40px" }}>
-                <Typography color="white" sx={{ color: "red" }}>
+                <Typography color="text.primary" sx={{ color: "red" }}>
                   NEW
                 </Typography>
-                <ArrowOutwardIcon sx={{ color: "white" }} />
+                <ArrowOutwardIcon sx={{ color: "text.primary" }} />
               </Box>
             </Box>
             {/* item-end */}
             {/* item-start */}
             <Box
               sx={{
-                bgcolor: "#170b14",
+                bgcolor: "background.seventh",
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
@@ -2049,7 +2081,7 @@ const Home = () => {
               }}
             >
               <Typography
-                color="white"
+                color="text.primary"
                 fontSize={{ md: "18px", xs: "14px" }}
                 fontFamily={"sora"}
                 fontWeight={"500"}
@@ -2061,7 +2093,7 @@ const Home = () => {
             {/* item-start */}
             <Box
               sx={{
-                bgcolor: "#170b14",
+                bgcolor: "background.seventh",
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
@@ -2073,7 +2105,7 @@ const Home = () => {
               }}
             >
               <Typography
-                color="white"
+                color="text.primary"
                 fontSize={{ md: "18px", xs: "14px" }}
                 fontFamily={"sora"}
                 fontWeight={"500"}
@@ -2085,7 +2117,7 @@ const Home = () => {
             {/* item-start */}
             <Box
               sx={{
-                bgcolor: "#170b14",
+                bgcolor: "background.seventh",
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
@@ -2097,7 +2129,7 @@ const Home = () => {
               }}
             >
               <Typography
-                color="white"
+                color="text.primary"
                 fontSize={{ md: "18px", xs: "14px" }}
                 fontFamily={"sora"}
                 fontWeight={"500"}
@@ -2114,7 +2146,7 @@ const Home = () => {
         <Grid
           container
           sx={{
-            background: "#0d0109",
+            background: "primary.main",
             // minWidth: "100dvw",
 
             py: "20px",
@@ -2124,7 +2156,7 @@ const Home = () => {
           <Container
             maxWidth="xl"
             sx={{
-              bgcolor: "#0d0109",
+              bgcolor: "primary.main",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -2141,7 +2173,7 @@ const Home = () => {
             >
               <Typography
                 fontFamily={"goodtimes"}
-                color={"white"}
+                color={"text.primary"}
                 fontSize={"30px"}
               >
                 <Typography
@@ -2161,7 +2193,7 @@ const Home = () => {
               </Typography>
               <Typography
                 fontFamily={"sora"}
-                sx={{ color: "rgba(255, 255, 255, 0.60)" }}
+                sx={{ color: "text.semitransparent" }}
                 fontWeight={"300"}
               >
                 It is a long established fact that a reader will be distracted
@@ -2172,7 +2204,7 @@ const Home = () => {
               </Typography>
               <Typography
                 fontFamily={"sora"}
-                sx={{ color: "rgba(255, 255, 255, 0.60)" }}
+                sx={{ color: "text.semitransparent" }}
                 fontWeight={"300"}
               >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -2189,7 +2221,7 @@ const Home = () => {
                   borderRadius: "20px",
                 }}
               >
-                <Typography color="white">Explorer Dapps</Typography>
+                <Typography color="text.primary">Explorer Dapps</Typography>
               </Button>
             </Box>
             <Box
@@ -2207,7 +2239,7 @@ const Home = () => {
         <Grid
           container
           sx={{
-            background: "#0d0109",
+            background: "main.primary",
             // minWidth: "100dvw",
 
             py: "20px",
@@ -2217,7 +2249,7 @@ const Home = () => {
           <Container
             maxWidth="xl"
             sx={{
-              bgcolor: "#0d0109",
+              bgcolor: "main.primary",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -2231,7 +2263,7 @@ const Home = () => {
               <Box
                 sx={{
                   borderBottom: 1,
-                  borderColor: "white",
+                  borderColor: "text.primary",
                   display: "flex",
                   justifyContent: "space-between",
                 }}
@@ -2241,11 +2273,11 @@ const Home = () => {
                   onChange={handleChange}
                   aria-label="basic tabs example"
                   indicatorColor="secondary"
-                  textColor="white"
+                  textColor="text.primary"
                 >
                   <Tab
                     sx={{
-                      color: "white",
+                      color: "text.primary",
                       mr: { lg: "100px", xs: "25px" },
                       fontFamily: "goodtimes",
                       fontSize: { xs: "18px", lg: "32px" },
@@ -2255,7 +2287,7 @@ const Home = () => {
                   />
                   <Tab
                     sx={{
-                      color: "white",
+                      color: "text.primary",
                       fontFamily: "goodtimes",
                       fontSize: { xs: "18px", lg: "32px" },
                     }}
@@ -2281,7 +2313,7 @@ const Home = () => {
                       justifyContent: "center",
                       alignItems: "center",
                       borderRadius: "100%",
-                      border: "1px solid white",
+                      border: "1px solid",
                       borderColor: "#9038FF",
                     }}
                     component={"div"}
@@ -2289,7 +2321,7 @@ const Home = () => {
                   >
                     <ArrowBackIosNewIcon
                       sx={{
-                        color: "white",
+                        color: "text.primary",
                         fontSize: { xs: "14px", md: "auto" },
                       }}
                     />
@@ -2302,14 +2334,15 @@ const Home = () => {
                       justifyContent: "center",
                       alignItems: "center",
                       borderRadius: "100%",
-                      border: "1px solid white",
+                      border: "1px solid",
+                      borderColor: " text.primary",
                       opacity: "50%",
                     }}
                     onClick={() => (news1Ref.current.scrollLeft -= 300)}
                   >
                     <ArrowForwardIosIcon
                       sx={{
-                        color: "white",
+                        color: "text.primary",
                         fontSize: { xs: "14px", md: "auto" },
                       }}
                     />
@@ -2320,7 +2353,7 @@ const Home = () => {
                 <Box
                   ref={news1Ref}
                   sx={{
-                    bgcolor: "#0d010a",
+                    bgcolor: "main.primary",
                     height: "300px",
                     py: "20px",
                     display: "flex",
@@ -2338,7 +2371,7 @@ const Home = () => {
                         sx={{
                           height: "100%",
                           width: "300px",
-                          bgcolor: "#160a14",
+                          bgcolor: "background.eight",
                           borderRadius: "20px",
                         }}
                       >
@@ -2348,7 +2381,7 @@ const Home = () => {
                           sx={{
                             height: "100%",
                             width: "300px",
-                            bgcolor: "#160a14",
+                            bgcolor: "background.eight",
                             borderRadius: "20px",
                             p: "20px",
                             position: "relative",
@@ -2382,14 +2415,14 @@ const Home = () => {
                             fontFamily={"sora"}
                             fontWeight={"400"}
                             fontSize={"12px"}
-                            color="white"
+                            color="text.primary"
                           >
                             1 Feb 2023
                           </Typography>
                           <Typography
                             fontFamily={"goodtimes"}
                             fontWeight={"700"}
-                            color={"white"}
+                            color={"text.primary"}
                             fontSize={"18px"}
                           >
                             QUATER
@@ -2398,7 +2431,7 @@ const Home = () => {
                             fontFamily={"sora"}
                             fontWeight={"400"}
                             fontSize={"12px"}
-                            color="rgba(255, 255, 255, 0.60)"
+                            color="text.semitransparent"
                           >
                             Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry. dummy text ever since the
@@ -2423,7 +2456,7 @@ const Home = () => {
         <Grid
           container
           sx={{
-            background: "#0d0109",
+            background: "primary.main",
             // minWidth: "100dvw",
 
             py: "20px",
@@ -2433,7 +2466,7 @@ const Home = () => {
           <Container
             maxWidth="xl"
             sx={{
-              bgcolor: "#0d0109",
+              bgcolor: "primary.main",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -2445,7 +2478,7 @@ const Home = () => {
               <Box
                 sx={{
                   borderBottom: 1,
-                  borderColor: "white",
+                  borderColor: "text.primary",
                   display: "flex",
                   justifyContent: "space-between",
                 }}
@@ -2455,11 +2488,11 @@ const Home = () => {
                   onChange={handleChange1}
                   aria-label="basic tabs example"
                   indicatorColor="secondary"
-                  textColor="white"
+                  textColor="text.primary"
                 >
                   <Tab
                     sx={{
-                      color: "white",
+                      color: "text.primary",
                       mr: { lg: "100px", xs: "25px" },
                       fontFamily: "goodtimes",
                       fontSize: { xs: "18px", lg: "32px" },
@@ -2469,7 +2502,7 @@ const Home = () => {
                   />
                   <Tab
                     sx={{
-                      color: "white",
+                      color: "text.primary",
                       fontFamily: "goodtimes",
                       fontSize: { xs: "18px", lg: "32px" },
                     }}
@@ -2495,7 +2528,7 @@ const Home = () => {
                       justifyContent: "center",
                       alignItems: "center",
                       borderRadius: "100%",
-                      border: "1px solid white",
+                      border: "1px solid",
                       borderColor: "#9038FF",
                     }}
                     component={"div"}
@@ -2503,7 +2536,7 @@ const Home = () => {
                   >
                     <ArrowBackIosNewIcon
                       sx={{
-                        color: "white",
+                        color: "text.primary",
                         fontSize: { xs: "14px", md: "auto" },
                       }}
                     />
@@ -2516,7 +2549,8 @@ const Home = () => {
                       justifyContent: "center",
                       alignItems: "center",
                       borderRadius: "100%",
-                      border: "1px solid white",
+                      border: "1px solid",
+                      borderColor: "text.primary",
                       opacity: "50%",
                     }}
                     component={"div"}
@@ -2524,7 +2558,7 @@ const Home = () => {
                   >
                     <ArrowForwardIosIcon
                       sx={{
-                        color: "white",
+                        color: "text.primary",
                         fontSize: { xs: "14px", md: "auto" },
                       }}
                     />
@@ -2535,7 +2569,7 @@ const Home = () => {
                 <Box
                   ref={news2Ref}
                   sx={{
-                    bgcolor: "#0d010a",
+                    bgcolor: "main.primary",
                     height: "430px",
                     py: "20px",
                     display: "flex",
@@ -2553,7 +2587,7 @@ const Home = () => {
                         sx={{
                           height: "100%",
                           width: "300px",
-                          bgcolor: "#160a14",
+                          bgcolor: "background.eight",
                           borderRadius: "20px",
                         }}
                       >
@@ -2563,7 +2597,7 @@ const Home = () => {
                           sx={{
                             height: "100%",
                             width: "300px",
-                            bgcolor: "#160a14",
+                            bgcolor: "background.eight",
                             borderRadius: "20px",
                             // p: "20px",
                             position: "relative",
@@ -2611,14 +2645,14 @@ const Home = () => {
                               fontFamily={"sora"}
                               fontWeight={"400"}
                               fontSize={"12px"}
-                              color="white"
+                              color="text.primary"
                             >
                               1 Feb 2023
                             </Typography>
                             <Typography
                               fontFamily={"goodtimes"}
                               fontWeight={"700"}
-                              color={"white"}
+                              color={"text.primary"}
                               fontSize={"18px"}
                             >
                               QUATER
@@ -2649,7 +2683,7 @@ const Home = () => {
         <Grid
           container
           sx={{
-            background: "#0d0109",
+            background: "main.primary",
             // minWidth: "100dvw",
 
             py: "20px",
@@ -2659,7 +2693,7 @@ const Home = () => {
           <Container
             maxWidth="xl"
             sx={{
-              bgcolor: "#0d0109",
+              bgcolor: "primary.main",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -2670,7 +2704,7 @@ const Home = () => {
             <Box
               sx={{
                 width: { lg: "40%", xs: "100%" },
-                bgcolor: "#0e0208",
+                bgcolor: "primary.main",
                 height: "400px",
                 display: "flex",
                 flexDirection: "column",
@@ -2681,7 +2715,7 @@ const Home = () => {
             >
               <Typography
                 fontFamily={"goodtimes"}
-                color="white"
+                color="text.primary"
                 fontSize={"28px"}
               >
                 The Secure app to store crypto yourself
@@ -2690,7 +2724,7 @@ const Home = () => {
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  bgcolor: "#0e0208",
+                  bgcolor: "primary.main",
                   // justifyContent: "flex-start",
                   alignItems: "flex-start",
                   gap: "5px",
@@ -2704,12 +2738,10 @@ const Home = () => {
                     gap: "5px",
                   }}
                 >
-                  <CheckCircleIcon
-                    sx={{ color: "rgba(255, 255, 255, 0.25)" }}
-                  />
+                  <CheckCircleIcon sx={{ color: "text.semitransparent" }} />
                   <Typography
                     fontFamily={"sora"}
-                    color="white"
+                    color="text.primary"
                     fontSize={"14px"}
                   >
                     All your digital assets in one place
@@ -2723,12 +2755,10 @@ const Home = () => {
                     gap: "5px",
                   }}
                 >
-                  <CheckCircleIcon
-                    sx={{ color: "rgba(255, 255, 255, 0.25)" }}
-                  />
+                  <CheckCircleIcon sx={{ color: "text.semitransparent" }} />
                   <Typography
                     fontFamily={"sora"}
-                    color="white"
+                    color="text.primary"
                     fontSize={"14px"}
                   >
                     Use Decentralized Apps
@@ -2742,12 +2772,10 @@ const Home = () => {
                     gap: "5px",
                   }}
                 >
-                  <CheckCircleIcon
-                    sx={{ color: "rgba(255, 255, 255, 0.25)" }}
-                  />
+                  <CheckCircleIcon sx={{ color: "text.semitransparent" }} />
                   <Typography
                     fontFamily={"sora"}
-                    color="white"
+                    color="text.primary"
                     fontSize={"14px"}
                   >
                     Pay friends, not addresses
@@ -2763,7 +2791,11 @@ const Home = () => {
                   borderRadius: "25px",
                 }}
               >
-                <Typography variant="button" fontFamily={"sora"} color="white">
+                <Typography
+                  variant="button"
+                  fontFamily={"sora"}
+                  color="text.primary"
+                >
                   Explore{" "}
                 </Typography>
               </Button>

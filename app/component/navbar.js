@@ -21,9 +21,12 @@ import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { ThemeStore } from "../store/store";
 import { ThemeConst } from "../utils/const/const";
+import { Switch } from "@mui/material";
+import { ThemeContext } from "@emotion/react";
 function NavBar() {
   const router = useRouter();
   const pathname = usePathname();
+  const [isLight, setisLight] = React.useState(false);
   const pages =
     pathname != "/"
       ? [
@@ -59,8 +62,8 @@ function NavBar() {
     <AppBar
       position="static"
       sx={{
-        background: "linear-gradient(90deg, #160a13,#220d29,#1d0c20)",
-        // bgcolor: "blue",
+        background: (theme) => theme.palette.appbar.main,
+        // bgcolor: "appbar.main",
         pb: "10px",
       }}
     >
@@ -138,6 +141,15 @@ function NavBar() {
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
+              <MenuItem>
+                <Switch
+                  onChange={(e) => {
+                    setTheme((e) =>
+                      e == ThemeConst.DARK ? ThemeConst.LIGHT : ThemeConst.DARK
+                    );
+                  }}
+                />
+              </MenuItem>
             </Menu>
           </Box>
           {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
@@ -190,6 +202,17 @@ function NavBar() {
                 </Button>
               )
             )}
+
+            <Button
+              onClick={(e) => {
+                setTheme((e) =>
+                  e == ThemeConst.DARK ? ThemeConst.LIGHT : ThemeConst.DARK
+                );
+              }}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Theme Toggle
+            </Button>
             <Button sx={{ bgcolor: "#a6482f", textAlign: "center", ml: 3 }}>
               <Image src={eco} alt="" style={styles.ecoButton} />
               <Typography

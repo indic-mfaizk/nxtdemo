@@ -18,7 +18,7 @@ const Footer = () => {
       <Grid
         container
         sx={{
-          background: "#12050e",
+          background: (theme) => theme.palette.footer.main,
           // minWidth: "100dvw",
 
           py: "20px",
@@ -28,7 +28,7 @@ const Footer = () => {
         <Container
           maxWidth="xl"
           sx={{
-            bgcolor: "#12050e",
+            bgcolor: "footer.main",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
@@ -40,7 +40,7 @@ const Footer = () => {
           <Box
             sx={{
               width: { lg: "33.3%", xs: "100%" },
-              bgcolor: "#12050e",
+              bgcolor: "footer.main",
               height: { lg: "300px", xs: "auto" },
               display: "flex",
               flexDirection: "column",
@@ -53,14 +53,14 @@ const Footer = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                bgcolor: "#12050e",
+                bgcolor: "footer.main",
                 width: "180px",
               }}
             >
               <Box component={Image} src={fLogo} />
               <Typography
                 fontFamily={"goodtimes"}
-                color="white"
+                color="text.main"
                 fontSize={"20px"}
                 sx={{
                   background:
@@ -74,7 +74,7 @@ const Footer = () => {
               </Typography>
             </Box>
             <Typography
-              color={"rgba(255, 255, 255, 0.60)"}
+              color={"text.semitransparent"}
               fontFamily={"sora"}
               fontWeight={"400"}
               fontSize={"14px"}
@@ -87,14 +87,14 @@ const Footer = () => {
           <Box
             sx={{
               width: { lg: "33.3%", xs: "100%" },
-              bgcolor: "#12050e",
+              bgcolor: "footer.main",
               height: { lg: "300px", xs: "auto" },
               display: "flex",
               flexDirection: "column",
             }}
           >
             <Button sx={{ width: "fit-content" }}>
-              <Typography sx={{ color: "white", fontWeight: "800" }}>
+              <Typography sx={{ color: "text.primary", fontWeight: "800" }}>
                 Quick Links
               </Typography>
             </Button>
@@ -103,21 +103,33 @@ const Footer = () => {
               onClick={() => router.push("/")}
             >
               <Typography
-                sx={{ color: "white", fontWeight: "400", opacity: "80%" }}
+                sx={{
+                  color: "text.primary",
+                  fontWeight: "400",
+                  opacity: "80%",
+                }}
               >
                 Home
               </Typography>
             </Button>
             <Button sx={{ width: "fit-content" }}>
               <Typography
-                sx={{ color: "white", fontWeight: "400", opacity: "80%" }}
+                sx={{
+                  color: "text.primary",
+                  fontWeight: "400",
+                  opacity: "80%",
+                }}
               >
                 Docs
               </Typography>
             </Button>
             <Button sx={{ width: "fit-content" }}>
               <Typography
-                sx={{ color: "white", fontWeight: "400", opacity: "80%" }}
+                sx={{
+                  color: "text.primary",
+                  fontWeight: "400",
+                  opacity: "80%",
+                }}
               >
                 FAQs
               </Typography>
@@ -127,7 +139,11 @@ const Footer = () => {
               onClick={() => router.push("privacy")}
             >
               <Typography
-                sx={{ color: "white", fontWeight: "400", opacity: "80%" }}
+                sx={{
+                  color: "text.primary",
+                  fontWeight: "400",
+                  opacity: "80%",
+                }}
               >
                 Terms & Condition
               </Typography>
@@ -136,7 +152,7 @@ const Footer = () => {
           <Box
             sx={{
               // width: { lg: "33.3%", xs: "100%" },
-              bgcolor: "#12050e",
+              bgcolor: "footer.main",
               height: { lg: "300px", xs: "auto" },
               display: "flex",
               flexDirection: "column",
@@ -146,13 +162,13 @@ const Footer = () => {
             }}
           >
             <Button sx={{ width: "fit-content" }}>
-              <Typography sx={{ color: "white", fontWeight: "800" }}>
+              <Typography sx={{ color: "text.main", fontWeight: "800" }}>
                 Contact Us
               </Typography>
             </Button>
             <Button sx={{ width: "fit-content" }}>
               <Typography
-                sx={{ color: "white", fontWeight: "400", opacity: "80%" }}
+                sx={{ color: "text.main", fontWeight: "400", opacity: "80%" }}
               >
                 Contact@fieres.com
               </Typography>
@@ -165,7 +181,7 @@ const Footer = () => {
                   width: "35px",
                   borderRadius: "35px",
                   p: "7px",
-                  bgcolor: "#1e111a",
+                  bgcolor: (theme) => theme.palette.icon.main,
                 }}
               />
               <TelegramIcon
@@ -175,7 +191,7 @@ const Footer = () => {
                   width: "35px",
                   borderRadius: "35px",
                   p: "7px",
-                  bgcolor: "#1e111a",
+                  bgcolor: (theme) => theme.palette.icon.main,
                 }}
               />
               <FacebookIcon
@@ -185,7 +201,7 @@ const Footer = () => {
                   width: "35px",
                   borderRadius: "35px",
                   p: "7px",
-                  bgcolor: "#1e111a",
+                  bgcolor: (theme) => theme.palette.icon.main,
                 }}
               />
               <YouTubeIcon
@@ -195,7 +211,7 @@ const Footer = () => {
                   width: "35px",
                   borderRadius: "35px",
                   p: "7px",
-                  bgcolor: "#1e111a",
+                  bgcolor: (theme) => theme.palette.icon.main,
                 }}
               />
               <LinkedInIcon
@@ -205,7 +221,7 @@ const Footer = () => {
                   width: "35px",
                   borderRadius: "35px",
                   p: "7px",
-                  bgcolor: "#1e111a",
+                  bgcolor: (theme) => theme.palette.icon.main,
                 }}
               />
             </Box>
@@ -217,7 +233,7 @@ const Footer = () => {
       <Grid
         container
         sx={{
-          background: "#12050e",
+          background: (theme) => theme.palette.footer.main,
           // minWidth: "100dvw",
 
           py: "20px",
@@ -226,7 +242,7 @@ const Footer = () => {
         <Container
           maxWidth="xl"
           sx={{
-            bgcolor: "#12050e",
+            bgcolor: "footer.main",
             display: "flex",
             justifyContent: { lg: "space-between", xs: "center" },
             alignItems: "center",
@@ -239,17 +255,29 @@ const Footer = () => {
             pt: "10px",
           }}
         >
-          <Typography fontFamily={"sora"} fontSize={"12px"} color={"white"}>
+          <Typography
+            fontFamily={"sora"}
+            fontSize={"12px"}
+            color={"text.primary"}
+          >
             © 2023 Fieres All Rights Reserved
           </Typography>
           <Box sx={{ display: "flex", gap: "10px" }}>
             <Button variant="text" onClick={() => router.push("/privacy")}>
-              <Typography fontFamily={"sora"} fontSize={"12px"} color={"white"}>
+              <Typography
+                fontFamily={"sora"}
+                fontSize={"12px"}
+                color={"text.primary"}
+              >
                 Privacy Policy
               </Typography>
             </Button>
             <Button variant="text" onClick={() => router.push("/disclaimer")}>
-              <Typography fontFamily={"sora"} fontSize={"12px"} color={"white"}>
+              <Typography
+                fontFamily={"sora"}
+                fontSize={"12px"}
+                color={"text.primary"}
+              >
                 Token Disclaimer
               </Typography>
             </Button>

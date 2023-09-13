@@ -386,7 +386,7 @@ const Home = () => {
                   <Box
                     component={"div"}
                     sx={{
-                      bgcolor: "#180c14",
+                      bgcolor: "clock.main",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "center",
@@ -396,7 +396,7 @@ const Home = () => {
                   >
                     <Box
                       sx={{
-                        bgcolor: "#241921",
+                        bgcolor: "clock.sec",
                         height: "40px",
                         width: "40px",
                         display: "flex",
@@ -415,7 +415,7 @@ const Home = () => {
                   <Box
                     component={"div"}
                     sx={{
-                      bgcolor: "#180c14",
+                      bgcolor: "clock.main",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "center",
@@ -425,7 +425,7 @@ const Home = () => {
                   >
                     <Box
                       sx={{
-                        bgcolor: "#241921",
+                        bgcolor: "clock.sec",
                         height: "40px",
                         width: "40px",
                         display: "flex",
@@ -444,7 +444,7 @@ const Home = () => {
                   <Box
                     component={"div"}
                     sx={{
-                      bgcolor: "#180c14",
+                      bgcolor: "clock.main",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "center",
@@ -454,7 +454,7 @@ const Home = () => {
                   >
                     <Box
                       sx={{
-                        bgcolor: "#241921",
+                        bgcolor: "clock.sec",
                         height: "40px",
                         width: "40px",
                         display: "flex",
@@ -473,7 +473,7 @@ const Home = () => {
                   <Box
                     component={"div"}
                     sx={{
-                      bgcolor: "#180c14",
+                      bgcolor: "clock.main",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "center",
@@ -483,7 +483,7 @@ const Home = () => {
                   >
                     <Box
                       sx={{
-                        bgcolor: "#241921",
+                        bgcolor: "clock.sec",
                         height: "40px",
                         width: "40px",
                         display: "flex",

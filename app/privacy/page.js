@@ -3,8 +3,8 @@ import React from "react";
 
 const Page = () => {
   return (
-    <Grid sx={{ bgcolor: "#0b0007" }}>
-      <Container maxWidth="xl" sx={{ bgcolor: "#0b0007" }}>
+    <Grid sx={{ bgcolor: "primary.main" }}>
+      <Container maxWidth="xl" sx={{ bgcolor: "primary.main" }}>
         <Box
           sx={{
             display: "flex",
@@ -15,14 +15,14 @@ const Page = () => {
         >
           <Typography
             variant="h2"
-            color={"white"}
+            color={"text.main"}
             fontFamily={"goodtimes"}
             fontSize={"26px"}
           >
             Privacy Policy
           </Typography>
           <Typography
-            color={"rgba(255, 255, 255, 0.70)"}
+            color={"text.semitransparent"}
             fontFamily={"sora"}
             fontSize={"12px"}
           >
@@ -40,14 +40,14 @@ const Page = () => {
           </Typography>
           <Typography
             variant="h2"
-            color={"white"}
+            color={"text.main"}
             fontFamily={"goodtimes"}
             fontSize={"18px"}
           >
             HOW DO WE COLLECT YOUR PERSONAL DATA?
           </Typography>
           <Typography
-            color={"rgba(255, 255, 255, 0.70)"}
+            color={"text.semitransparent"}
             fontFamily={"sora"}
             fontSize={"12px"}
           >
@@ -78,14 +78,14 @@ const Page = () => {
           </Typography>
           <Typography
             variant="h2"
-            color={"white"}
+            color={"text.main"}
             fontFamily={"goodtimes"}
             fontSize={"18px"}
           >
             HOW WILL WE USE YOUR DATA?
           </Typography>
           <Typography
-            color={"rgba(255, 255, 255, 0.70)"}
+            color={"text.semitransparent"}
             fontFamily={"sora"}
             fontSize={"12px"}
           >
@@ -129,14 +129,14 @@ const Page = () => {
           </Typography>
           <Typography
             variant="h2"
-            color={"white"}
+            color={"text.main"}
             fontFamily={"goodtimes"}
             fontSize={"18px"}
           >
             WHAT ARE YOUR DATA PROTECTION RIGHTS?
           </Typography>
           <Typography
-            color={"rgba(255, 255, 255, 0.70)"}
+            color={"text.semitransparent"}
             fontFamily={"sora"}
             fontSize={"12px"}
           >
@@ -166,14 +166,14 @@ const Page = () => {
           </Typography>
           <Typography
             variant="h2"
-            color={"white"}
+            color={"text.main"}
             fontFamily={"goodtimes"}
             fontSize={"18px"}
           >
             cookies
           </Typography>
           <Typography
-            color={"rgba(255, 255, 255, 0.70)"}
+            color={"text.semitransparent"}
             fontFamily={"sora"}
             fontSize={"12px"}
           >
@@ -184,14 +184,14 @@ const Page = () => {
           </Typography>
           <Typography
             variant="h2"
-            color={"white"}
+            color={"text.main"}
             fontFamily={"goodtimes"}
             fontSize={"18px"}
           >
             HOW DO WE USE COOKIES?
           </Typography>
           <Typography
-            color={"rgba(255, 255, 255, 0.70)"}
+            color={"text.semitransparent"}
             fontFamily={"sora"}
             fontSize={"12px"}
           >
@@ -207,14 +207,14 @@ const Page = () => {
           </Typography>
           <Typography
             variant="h2"
-            color={"white"}
+            color={"text.main"}
             fontFamily={"goodtimes"}
             fontSize={"18px"}
           >
             HOW TO MANAGE COOKIES
           </Typography>
           <Typography
-            color={"rgba(255, 255, 255, 0.70)"}
+            color={"text.semitransparent"}
             fontFamily={"sora"}
             fontSize={"12px"}
           >
@@ -225,14 +225,14 @@ const Page = () => {
           </Typography>
           <Typography
             variant="h2"
-            color={"white"}
+            color={"text.main"}
             fontFamily={"goodtimes"}
             fontSize={"18px"}
           >
             CHANGES TO THIS PRIVACY POLICY
           </Typography>
           <Typography
-            color={"rgba(255, 255, 255, 0.70)"}
+            color={"text.semitransparent"}
             fontFamily={"sora"}
             fontSize={"12px"}
           >
@@ -247,14 +247,14 @@ const Page = () => {
           </Typography>
           <Typography
             variant="h2"
-            color={"white"}
+            color={"text.main"}
             fontFamily={"goodtimes"}
             fontSize={"18px"}
           >
             HOW TO CONTACT US
           </Typography>
           <Typography
-            color={"rgba(255, 255, 255, 0.70)"}
+            color={"text.semitransparent"}
             fontFamily={"sora"}
             fontSize={"12px"}
           >

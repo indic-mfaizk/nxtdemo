@@ -30,6 +30,19 @@ export const DarkTheme = createTheme({
       seventh: "#170b14",
       eight: "#160a14",
     },
+    appbar: {
+      main: "linear-gradient(90deg, #160a13,#220d29,#1d0c20)",
+    },
+    footer: {
+      main: "#12050e",
+    },
+    icon: {
+      main: "#1e111a",
+    },
+    clock: {
+      main: "#180c14",
+      sec: "#241921",
+    },
   },
 });
 export const LightTheme = createTheme({
@@ -61,6 +74,19 @@ export const LightTheme = createTheme({
       sixth: "#FFFFFF",
       seventh: "#F0F0F0",
       eight: "#F1F1F1",
+    },
+    appbar: {
+      main: "#758283",
+    },
+    footer: {
+      main: "#CAD5E2",
+    },
+    icon: {
+      main: "#1e111a",
+    },
+    clock: {
+      main: "#11111",
+      sec: "#feeefa",
     },
   },
 });

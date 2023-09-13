@@ -147,6 +147,9 @@ function NavBar() {
                     setTheme((e) =>
                       e == ThemeConst.DARK ? ThemeConst.LIGHT : ThemeConst.DARK
                     );
+                    theme == ThemeConst.LIGHT
+                      ? localStorage.setItem("theme", ThemeConst.DARK)
+                      : localStorage.setItem("theme", ThemeConst.LIGHT);
                   }}
                 />
               </MenuItem>
@@ -208,6 +211,9 @@ function NavBar() {
                 setTheme((e) =>
                   e == ThemeConst.DARK ? ThemeConst.LIGHT : ThemeConst.DARK
                 );
+                theme == ThemeConst.LIGHT
+                  ? localStorage.setItem("theme", ThemeConst.DARK)
+                  : localStorage.setItem("theme", ThemeConst.LIGHT);
               }}
               sx={{ my: 2, color: "white", display: "block" }}
             >

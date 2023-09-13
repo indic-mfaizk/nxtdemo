@@ -6,7 +6,7 @@ import { Inter } from "next/font/google";
 import "@fontsource-variable/sora";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/oxanium";
-import { CircularProgress, CssBaseline } from "@mui/material";
+import { CircularProgress, CssBaseline, Grid } from "@mui/material";
 import "animate.css";
 import { useTheme } from "@emotion/react";
 import { DarkTheme, LightTheme } from "./utils/theme/theme";
@@ -35,9 +35,25 @@ export default function RootLayout({ children }) {
             theme={theme == ThemeConst.DARK ? DarkTheme : LightTheme}
           >
             <CssBaseline />
-            <NavBar />
-            {children}
-            <Footer />
+            {theme !== "" ? (
+              <>
+                <NavBar />
+                {children}
+                <Footer />
+              </>
+            ) : (
+              <Grid
+                sx={{
+                  height: "100vh",
+                  width: "100vw",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <CircularProgress color="secondary" />
+              </Grid>
+            )}
           </ThemeProvider>
         </ThemeStore.Provider>
       </body>
